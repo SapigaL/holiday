@@ -1,0 +1,17 @@
+fishshop\Stuffing.class
+fishshop\persistence\dao\GoodDao.class
+fishshop\Writer.class
+fishshop\persistence\dao\IDao.class
+fishshop\FishShop.class
+fishshop\Main.class
+fishshop\FishType.class
+fishshop\persistence\dao\AbstractDao.class
+fishshop\LocationType.class
+fishshop\Cavlar.class
+fishshop\persistence\dao\GoodDaoImplementation.class
+fishshop\Fish.class
+fishshop\JaxRsConfig.class
+fishshop\ItemServise.class
+fishshop\ColorType.class
+fishshop\Good.class
+fishshop\Mixed.class
