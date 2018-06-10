@@ -13,18 +13,18 @@ public class main {
         System.out.println(boxing.toString());
         Gym.printStaticSum();
 
-        Gym weightlifting = new Gym("Fixsiki","Kachalka", 87,5 );
+        Gym weightlifting = new Gym("Fixsiki", "Kachalka", 87, 5);
         weightlifting.setArea(843);
         System.out.println(weightlifting.toString());
         Gym.printStaticSum();
 
 
-        Gym gym = new Gym ("Dynamo","pool", 1000, 120,6 );
+        Gym gym = new Gym("Dynamo", "pool", 1000, 120, 6);
         System.out.println(gym.toString());
         Gym.printStaticSum();
 
 
-        boxing.resetValues("Kick Him", "Boxing", 20,500 ,4);
+        boxing.resetValues("Kick Him", "Boxing", 20, 500, 4);
         System.out.println(boxing.toString());
         Gym.printStaticSum();
 

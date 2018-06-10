@@ -2,95 +2,97 @@ package demo;
 
 
 public class Gym {
-	
+
     private static int totalNabOfSim = 0;
-	private String name;
-    private int Area;
+    private String name;
+    private int area;
     private int nabmerOfSimulators;
     private int workDays;
-    private String Type;
-    public Gym () {
-    	totalNabOfSim+= nabmerOfSimulators;
-      	
+    private String type;
+
+    public Gym() {
+        totalNabOfSim += nabmerOfSimulators;
+
     }
-    public Gym (String Name,String Type,int NabmerOfSimulators,int WorkDays) {
-    	this.name = Name;
-    	this.Type = Type;
-    	this.nabmerOfSimulators = NabmerOfSimulators;
-    	this.workDays = WorkDays;
-    	totalNabOfSim+=	NabmerOfSimulators;   
+
+    public Gym(String name, String type, int nabmerOfSimulators, int workDays) {
+        this.name = name;
+        this.type = type;
+        this.nabmerOfSimulators = nabmerOfSimulators;
+        this.workDays = workDays;
+        totalNabOfSim += nabmerOfSimulators;
     }
-    
-    public Gym (String Name,String Type, int Area,int NabmerOfSimulators,int WorkDays) {
-    	this.name = Name;
-    	this.Area = Area;
-    	this.nabmerOfSimulators = NabmerOfSimulators;
-    	this.workDays = WorkDays;
-    	this.Type = Type;
-    	totalNabOfSim+=	NabmerOfSimulators;   
+
+    public Gym(String name, String type, int area, int nabmerOfSimulators, int workDays) {
+        this.name = name;
+        this.area = area;
+        this.nabmerOfSimulators = nabmerOfSimulators;
+        this.workDays = workDays;
+        this.type = type;
+        totalNabOfSim += nabmerOfSimulators;
     }
-    
+
     public static void printStaticSum() {
-     	System.out.println("total Nabmer Of Simulators: " + totalNabOfSim + "\n");
+        System.out.println("total Nabmer Of Simulators: " + totalNabOfSim + "\n");
     }
 
 
     public int getArea() {
-		return Area;
+        return area;
     }
 
-    public void setArea(int Area) {
-    	this.Area = Area;
+    public void setArea(int area) {
+        this.area = area;
     }
 
     public String getName() {
-    	return name;
+        return name;
     }
 
-    public void setName(String Name) {
-    	this.name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
-    
+
     public int getNabmerOfSimulators() {
-		return nabmerOfSimulators;
+        return nabmerOfSimulators;
     }
 
-    public void setNabmerOfSimulators(int NabmerOfSimulators) {
-    	this.nabmerOfSimulators = NabmerOfSimulators;
-    	totalNabOfSim+=	this.nabmerOfSimulators;
+    public void setNabmerOfSimulators(int nabmerOfSimulators) {
+        this.nabmerOfSimulators = nabmerOfSimulators;
+        totalNabOfSim += this.nabmerOfSimulators;
     }
-    
+
     public int getWorkDays() {
-		return workDays;
+        return workDays;
     }
 
-    public void setWorkDays(int WorkDays) {
-    	this.workDays = WorkDays;
+    public void setWorkDays(int workDays) {
+        this.workDays = workDays;
     }
-    
+
     public String getType() {
-    	return Type;
+        return type;
     }
-    
-    public void setType(String Type) {
-    	this.Type = Type;
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String toString() {
 
-       return "Gym: " + name + "\nType of Gym:" + Type + "\nWorking Days:" + workDays + "\nNumber of simulators:" + nabmerOfSimulators +"\nArea:" + Area +  "\n";
+        return "Gym: " + name + "\ntype of Gym:" + type + "\nWorking Days:" + workDays + "\nNumber of simulators:" + nabmerOfSimulators + "\narea:" + area + "\n";
     }
-    
+
     public void printSum() {
         System.out.println("total Nabmer Of Simulators: " + totalNabOfSim + "\n");
     }
 
-    public void resetValues(String name,String Type,int nabmerOfSimulators,int workDays,int area) {
-    	this.name = name;
-    	this.Area = area;
-    	this.nabmerOfSimulators = nabmerOfSimulators;
-    	this.workDays = workDays;
-    	this.Type = Type;
-        }
+    public void resetValues(String name, String type, int nabmerOfSimulators, int workDays, int area) {
+        this.name = name;
+        this.area = area;
+        this.nabmerOfSimulators = nabmerOfSimulators;
+        this.workDays = workDays;
+        this.type = type;
+    }
 
 }
